@@ -2,9 +2,9 @@
 
 function celsiusToFahrenheit(celsius) {
     const result = (celsius * (9 / 5)) + 32;
-    return result;
+    return result.toFixed(2);;
 }
 
-const input = 0;
-const output = celsiusToFahrenheit(input);
+const input = 3;
+const output = parseFloat(celsiusToFahrenheit(input));
 console.log(input, 'degree celsius = ', output, 'degree fahrenheit');
